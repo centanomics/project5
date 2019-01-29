@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import fetchJsonp from 'fetch-jsonp';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 
