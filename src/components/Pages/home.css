@@ -1,0 +1,85 @@
+.home section {
+    background-image: url('https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3298&q=80');
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home section>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(66, 62, 57, 0.5);
+    height: 700px;
+}
+
+.description {
+    display: inline-block;
+    width: 500px;
+}
+
+.shelterForm {
+    margin-top: 50px;
+    background-color: var(--light-text);
+    padding: 5rem;
+    border-bottom: 10px solid var(--second);
+    display: flex;
+    flex-direction: column;
+}
+
+.shelterForm h3 {
+    color: var(--dark-text);
+    font-size: 45px;
+}
+
+.shelterForm div {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.shelterForm input {
+    border: none;
+    background: white;
+    padding: 0.5rem;
+    width: 200px;
+    border-left: 5px solid var(--border);
+}
+
+.shelterForm label {
+    color: var(--dark-text);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 0.75rem;
+}
+
+.shelterForm button {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--light-text);
+    background: var(--border);
+    color: var(--light-text);
+}
+
+.shelterForm button:hover {
+    border: 2px solid var(--border);
+    background: var(--light-text);
+    color: var(--border);
+    cursor: pointer;
+}
+
+.info {
+    text-align: left;
+    color: white;
+}
+
+.info h2 {
+    font-size: 50px;
+}
+
+.info p {
+    font-size: 24px;
+}
