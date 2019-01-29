@@ -1,0 +1,60 @@
+.petDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.shelterDisplay {
+    background-color: var(--light-text);
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 5px solid var(--border);
+    margin-bottom: 1rem;
+}
+
+.modalImg {
+    margin-left: 20px;
+    max-height: 500px;
+}
+
+.modalText {
+    max-width: 500px;
+}
+
+.petLists div{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.pagination button {
+    background: var(--light-text);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.pagination li:first-child button {
+    border: none;
+    border-left: 5px solid var(--second);
+}
+
+.pagination li:last-child button {
+    border: none;
+    border-right: 5px solid var(--second);
+}
+
+button#begin {
+    border-left: 5px solid var(--main);
+    pointer-events: none;
+}
+
+button#end {
+    border-right: 5px solid var(--main);
+    pointer-events: none;
+}
+
+/* .modalText {
+    text-align: center;
+    max-width: 50%;
+    overflow: scroll;
+} */
