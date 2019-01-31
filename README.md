@@ -12,7 +12,7 @@ Here, there is an information section and a form section where you can type in a
 
 This is the search results page for the shelters. Each result comes with 3 buttons. They show a preview of the pets, show information about the shelter (like phone number, email, etc) and show all of the pets which leads us to...
 
-![Pet Screen](https://i.imgur.com/ifsvCLx.png)
+![Pet Screen](https://i.imgur.com/QmBxx3B.png)
 
 The pet page! This page simply shows all of the pets a shelter has 10 at a time, with proper pagination. You can also reload the page and you'll be right where you left off!
 
