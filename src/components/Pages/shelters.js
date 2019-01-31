@@ -86,7 +86,7 @@ class shelters extends Component {
         })
   }
 
-  showAllPets = () => {
+  showAllPets = (shelterId) => {
 
     // this.setState({recentShelter: shelterId});
     
@@ -100,8 +100,9 @@ class shelters extends Component {
             // console.log(this.state.pets);
             // this.showPets(e.target.parent);
             // console.log(e.target.parent);
+            this.setState({goSeePets: true, recentShelter: shelterId});
             this.props.getAllPets(currPets, this.state.pets.id);
-            this.setState({goSeePets: true});
+            
         })
         .catch(error => {
             console.log("Error occured: ", error);
@@ -179,7 +180,7 @@ class shelters extends Component {
                     <p>{shelter.city.$t}, {shelter.state.$t} {shelter.zip.$t}</p>
                     <button type="button" onClick={(e) => {this.getShelterPets(e, shelter.id.$t)}}>See Pets</button>
                     <button type="button" onClick={(e) => this.openModal(shelter)}>More Shelter Info</button>
-                    <button type="button" onClick={()=>this.showAllPets()}>See all Pets</button>
+                    <button type="button" onClick={()=>this.showAllPets(shelter.id.$t)}>See all Pets</button>
                 </section>
                 <div className="shelterPets">{shelter.id.$t===this.state.pets.id? petsList: ''}</div>
             </article>
@@ -205,10 +206,10 @@ class shelters extends Component {
             <p>{this.state.selectedShelter.phone.$t==null ? 'No number': this.state.selectedShelter.phone.$t}</p>
             <p>{this.state.selectedShelter.email.$t==null ? 'No email': this.state.selectedShelter.email.$t} </p>
             <p>{this.state.selectedShelter.city.$t}, {this.state.selectedShelter.state.$t} {this.state.selectedShelter.zip.$t}</p>
-            <a href={"https://maps.google.com/?q="+ this.state.selectedShelter.latitude.$t +"," + this.state.selectedShelter.longitude.$t}>Find this shelter on a map!</a>
+            <a href={"https://maps.google.com/?q="+ this.state.selectedShelter.latitude.$t +"," + this.state.selectedShelter.longitude.$t}>Find this shelter on a map!</a><br/>
             <button onClick={this.closeModal}>close</button>
             </Modal>
-          <div>{this.state.goSeePets===false? '':<Redirect to={'../../../pets/' + this.state.pets.id + '/1'}/>}</div>
+          <div>{this.state.goSeePets===false? '':<Redirect to={'../../../pets/' + this.state.recentShelter + '/1'}/>}</div>
           <div>{this.state.redirect? <Redirect to={'../../' + this.state.shelterSearch.zip + '/' + this.state.shelterSearch.name + '/' + this.state.currPage}/> : ''}</div>
         </div>
       );
