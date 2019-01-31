@@ -1,4 +1,4 @@
-#Adoption Central
+# Adoption Central
 
 ## About the Project
 
@@ -16,6 +16,15 @@ This is the search results page for the shelters. Each result comes with 3 butto
 
 The pet page! This page simply shows all of the pets a shelter has 10 at a time, with proper pagination. You can also reload the page and you'll be right where you left off!
 
+[Try it out for yourself here!](https://semyers189.github.io/project5/)
+
 [Video Describing Adoption Central ](https://youtu.be/XIYiT3SW8CI)
+
+## How to get the project working on your machine
+
+1. Download the repo
+2. Path to it in terminal
+3. npm install (to get needed addons)
+4. npm start
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
